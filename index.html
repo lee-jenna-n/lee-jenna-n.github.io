@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="mySite.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: ['Roboto Slab', 'Roboto', 'Pacifico']
+            }
+          });
+        </script>
+        
+        <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        
+        <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="pagesStyle/aboutMe.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="pagesStyle/cssAnimationStyle.css" media="screen" />
+    </head>
+    <body>
+        <div id="top">
+            <div class="contact">
+                <a href="mailto:jnl9nb@gmail.com" target="_top" data-toggle="tooltip" data-placement="bottom" title="lee.jenna.n@gmail.com" aria-label="Email icon"><i class="fa fa-envelope"></i></a>
+                <a href="http://www.linkedin.com/in/jenna-lee15" target="_blank" data-toggle="tooltip" data-placement="bottom" title="jenna-lee15" aria-label="LinkedIn icon"><i class="fa fa-linkedin"></i></a>
+                <a href="http://www.github.com/lee-jenna-n" target="_blank"data-toggle="tooltip" data-placement="bottom" title="lee-jenna-n" aria-label="GitHub icon"><i class="fa fa-github"></i></a>
+                <a href="http://www.facebook.com/lee.jenna15" target="_blank" data-toggle="tooltip" data-placement="bottom" title="lee.jenna15" aria-label="Facebok icon"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://www.instagram.com/jennanleee/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="jennanleee" aria-label="Instagram icon"><i class="fa fa-instagram"></i></a>
+                <a href="/images/snapcode.png" target="_blank" data-toggle="tooltip" data-placement="bottom" title="jennanleee" aria-label="Snapchat icon"><i class="fa fa-snapchat-square"></i></a>
+            </div>
+            
+            <h1 id="title">Jenna Lee</h1>
+            <ul id="navigation" role="navigation">
+				<li><a class="page" href="#/">Home</a></li>
+                <li id= "portfolio" aria-haspopup="true"><a class="page" href="#/portfolio">Portfolio</a>
+					<ul class="submenu">
+						<li><a class="page" href="#/cssAnimation">CSS Animation</a></li>
+						<li><a class="page" href="#/javaScript">JavaScript</a></li>
+						<li><a class="page" href="#/java">Java</a></li>
+					</ul>
+				</li>
+				<li><a class="page" href="#/aboutMe">About Me</a></li>
+            </ul>
+            <hr id="underNavLine"/>
+        </div>
+        
+        <div ng-view id="content"></div>
+        
+        <hr id="footerLine" />
+        <div id="footer">Jenna Lee / 2016</div>
+    </body>
+</html>
