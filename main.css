@@ -63,15 +63,14 @@ hr {
 	list-style-type: none;
 	background-color: #EEEEEE;
 	padding: 0px;
-	z-index: 1;
 }
 
 #portfolio:hover .submenu,
 #portfolio a:focus + .submenu {
 	display: block;
 	z-index: 1;
-	-webkit-animation: fadeIn 200ms;
-	animation: fadeIn 200ms;
+	-webkit-animation: fadeInSubmenu 200ms;
+	animation: fadeInSubmenu 200ms;
 }
 
 #portfolio:hover .submenu li,
