@@ -1,8 +1,8 @@
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeInSubmenu {
     from {opacity: 0;}
       to {opacity: 1;}
 }  
-@keyframes fadeIn {
+@keyframes fadeInSubmenu {
     from {opacity: 0;}
       to {opacity: 1;}
 }
