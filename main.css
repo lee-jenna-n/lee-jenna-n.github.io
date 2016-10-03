@@ -63,6 +63,7 @@ hr {
 	list-style-type: none;
 	background-color: #EEEEEE;
 	padding: 0px;
+	z-index: 1;
 }
 
 #portfolio:hover .submenu,
