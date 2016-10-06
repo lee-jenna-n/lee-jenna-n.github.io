@@ -1,3 +1,5 @@
+@import 'global';
+
 table {
 	width: 70%;
 }
@@ -38,8 +40,7 @@ td {
 .fa-heart {
 	color: red;
 	font-size: 30px;
-	-webkit-animation: colors 4s infinite;
-	animation: colors 4s infinite;
+	@include animation(colors, 4s, infinite);
 }
 
 /* speech bubble */
@@ -72,8 +73,7 @@ td {
 	right: 0px;
 	color: darkorange;
 	font-size: 14px;
-	-webkit-animation: fadeIn 2s infinite;
-	animation: fadeIn 2s infinite;
+	@include animation(fadeIn, 2s, infinite);
 }
 
 /* arrow */
@@ -86,8 +86,7 @@ td {
 
 .fa-long-arrow-right {
 	font-size: 30px;
-	-webkit-animation: bounceRight 1s infinite;
-	animation: bounceRight 1s infinite;
+	@include animation(bounceRight, 1s, infinite);
 }
 
 /* cog */
@@ -100,8 +99,7 @@ td {
 .fa-cog {
 	color: rebeccapurple;
 	font-size: 35px;
-	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
+	@include animation(spin, 2s, linear, infinite);
 }
 
 /* truck */
@@ -117,8 +115,7 @@ td {
 	left: 100px;
 	width: 60px;
 	color: forestgreen;
-	-webkit-animation: driveLeft 6s linear infinite;
-	animation: driveLeft 6s linear infinite;
+	@include animation(driveLeft, 6s, linear, infinite);
 }
 .fa-truck {
 	font-size: 32px;
@@ -129,8 +126,7 @@ td {
 	height: 20px;
 	float: right;
 	top: 7px;
-	-webkit-animation: fadeIn 1s infinite;
-	animation: fadeIn 1s infinite;
+	@include animation(fadeIn, 1s, infinite);
 }
 .smoke .fa-circle {
 	color: dimgray;

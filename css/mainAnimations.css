@@ -1,0 +1,12 @@
+@-webkit-keyframes fadeInSubmenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeInSubmenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=mainAnimations.css.map */

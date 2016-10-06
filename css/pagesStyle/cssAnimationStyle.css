@@ -1,0 +1,194 @@
+table {
+  width: 70%; }
+
+th {
+  opacity: 0; }
+
+td {
+  height: 50px;
+  overflow: hidden; }
+
+/* heart */
+@-webkit-keyframes colors {
+  0% {
+    color: red; }
+  12% {
+    color: orange; }
+  24% {
+    color: yellow; }
+  36% {
+    color: green; }
+  48% {
+    color: blue; }
+  60% {
+    color: indigo; }
+  72% {
+    color: purple; }
+  84% {
+    color: deeppink; }
+  93% {
+    color: red; } }
+@keyframes colors {
+  0% {
+    color: red; }
+  12% {
+    color: orange; }
+  24% {
+    color: yellow; }
+  36% {
+    color: green; }
+  48% {
+    color: blue; }
+  60% {
+    color: indigo; }
+  72% {
+    color: purple; }
+  84% {
+    color: deeppink; }
+  93% {
+    color: red; } }
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  -webkit-animation: colors 4s infinite;
+  animation: colors 4s infinite; }
+
+/* speech bubble */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.talking {
+  position: relative;
+  height: 42px;
+  width: 32px; }
+
+.fa-male {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: cornflowerblue;
+  font-size: 34px; }
+
+.fa-comment {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: darkorange;
+  font-size: 14px;
+  -webkit-animation: fadeIn 2s infinite;
+  animation: fadeIn 2s infinite; }
+
+/* arrow */
+@-webkit-keyframes bounceRight {
+  30% {
+    transform: translate(10px, 0px); } }
+@keyframes bounceRight {
+  30% {
+    transform: translate(10px, 0px); } }
+.fa-long-arrow-right {
+  font-size: 30px;
+  -webkit-animation: bounceRight 1s infinite;
+  animation: bounceRight 1s infinite; }
+
+/* cog */
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  100% {
+    transform: rotate(360deg); } }
+.fa-cog {
+  color: rebeccapurple;
+  font-size: 35px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+/* truck */
+@-webkit-keyframes driveLeft {
+  100% {
+    -webkit-transform: translate(-300%); } }
+@keyframes driveLeft {
+  100% {
+    transform: translate(-300%); } }
+.truck {
+  position: relative;
+  left: 100px;
+  width: 60px;
+  color: forestgreen;
+  -webkit-animation: driveLeft 6s linear infinite;
+  animation: driveLeft 6s linear infinite; }
+
+.fa-truck {
+  font-size: 32px; }
+
+.smoke {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: right;
+  top: 7px;
+  -webkit-animation: fadeIn 1s infinite;
+  animation: fadeIn 1s infinite; }
+
+.smoke .fa-circle {
+  color: dimgray;
+  position: absolute; }
+
+.smoke .fa-circle.fa-lg {
+  font-size: 8px; }
+
+.smoke .fa-circle.fa-lg:first-child {
+  left: 7%;
+  top: 5%; }
+
+.smoke .fa-circle.fa-lg:nth-child(2) {
+  left: 36%; }
+
+.smoke .fa-circle.fa-lg:nth-child(3) {
+  left: 30%;
+  top: 21%; }
+
+.smoke .fa-circle.fa-lg:nth-child(4) {
+  top: 24%; }
+
+.smoke .fa-circle.fa-lg:nth-child(5) {
+  left: 11%;
+  top: 35%; }
+
+.smoke .fa-circle.medium {
+  font-size: 6px;
+  left: -10%;
+  top: 40%; }
+
+.smoke .fa-circle.small {
+  font-size: 4px;
+  left: -21%;
+  top: 53%; }
+
+/* microphone */
+.microphone .fa-square {
+  transform: perspective(10px) rotate3d(-0.8, -0.2, 0.8, 54deg) scale(0.3, 1.5);
+  height: 11px;
+  position: relative;
+  top: 11px;
+  color: black; }
+
+.microphone .fa-circle {
+  position: relative;
+  left: -13px;
+  font-size: 12px;
+  top: -3px;
+  color: darkgray; }
+
+/*# sourceMappingURL=cssAnimationStyle.css.map */

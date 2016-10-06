@@ -1,0 +1,166 @@
+@-webkit-keyframes fadeInSubmenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeInSubmenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+html, body {
+  font-family: "Roboto";
+  min-width: 800px;
+  min-height: 600px;
+  margin: 0px;
+  height: 100%; }
+
+h1 {
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  margin: 10px 0px 5px; }
+
+h2 a {
+  font-size: 20px; }
+
+a {
+  font-size: 16px;
+  color: #602491;
+  text-decoration: underline; }
+  a:hover {
+    color: #602491; }
+  a:focus {
+    color: #604f6d; }
+
+#top {
+  font-family: "Roboto Slab";
+  color: #602491;
+  text-align: center;
+  height: 150px; }
+
+#title {
+  font-family: "Pacifico";
+  font-size: 55px;
+  margin: 0px 0px 8px; }
+
+hr {
+  height: 1px;
+  background: #602491;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+#navigation {
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 0px; }
+  #navigation li {
+    display: inline-block; }
+
+.page {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+  border-color: #602491;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  color: #602491;
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 170px; }
+  .page:link {
+    color: #602491;
+    text-decoration: none; }
+  .page:hover {
+    background-color: #602491;
+    color: white;
+    text-decoration: none; }
+  .page:focus {
+    color: #602491; }
+    .page:focus:hover {
+      color: white; }
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 126px;
+  list-style-type: none;
+  background-color: #EEEEEE;
+  padding: 0px; }
+  .submenu .page {
+    font-size: 17px; }
+
+#portfolio:hover .submenu,
+#portfolio a:focus + .submenu {
+  display: block;
+  z-index: 1;
+  -webkit-animation: fadeInSubmenu 200ms;
+  animation: fadeInSubmenu 200ms; }
+  #portfolio:hover .submenu li,
+  #portfolio a:focus + .submenu li {
+    display: list-item; }
+  #portfolio:hover .submenu .page,
+  #portfolio a:focus + .submenu .page {
+    margin: -1px 0px;
+    width: 170px; }
+
+#underNavLine {
+  width: 90%; }
+
+#content {
+  padding: 10px 15%;
+  height: calc(100% - 185px);
+  height: -moz-calc(100% - 185px);
+  height: -webkit-calc(100% - 185px);
+  overflow: auto;
+  font-size: 16px;
+  width: 100%;
+  margin-right: -8px;
+  position: relative;
+  display: block; }
+
+.contact {
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 15px; }
+  .contact a {
+    margin-right: 8px; }
+  .contact .fa {
+    color: #602491; }
+  .contact .fa-envelope,
+  .contact .fa-facebook-official {
+    font-size: 18px; }
+  .contact .fa-github,
+  .contact .fa-instagram,
+  .contact .fa-snapchat-square,
+  .contact .fa-linkedin {
+    font-size: 20px; }
+
+#footerLine {
+  width: 97%; }
+
+#footer {
+  background-color: white;
+  color: #602491;
+  height: 20px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px; }
+
+.tooltip {
+  margin-right: 5px;
+  font-family: "Roboto";
+  font-size: 12px; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; }
+
+::-webkit-scrollbar-track {
+  background-color: #EEEEEE; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #602491;
+  border-radius: 2px; }
+
+/*# sourceMappingURL=main.css.map */

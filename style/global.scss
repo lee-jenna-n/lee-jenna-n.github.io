@@ -1,0 +1,11 @@
+$main-purple: #602491;
+$dark-purple: #604f6d;
+$secondary-light-gray: #EEEEEE;
+$title-font: 'Pacifico';
+$heading-font: 'Roboto Slab';
+$text-font: 'Roboto';
+
+@mixin animation($name, $duration, $timing: null, $count: null) {
+    -webkit-animation: $name $duration $timing $count;
+	animation: $name $duration $timing $count;
+}
