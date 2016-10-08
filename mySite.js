@@ -4,26 +4,26 @@ app.config(function($routeProvider) {
     $routeProvider
     
 	.when('/', {
-        templateUrl : 'pages/home.html'
+        templateUrl : 'pages/aboutMe.html'
     })
     
     .when('/portfolio', {
         templateUrl : 'pages/portfolio.html'
     })
     
-    .when('/aboutMe', {
-        templateUrl : 'pages/aboutMe.html'
+    .when('/resume', {
+        templateUrl : 'pages/resume.html'
     })
 	
-	.when('/cssAnimation', {
+	.when('/portfolio/cssAnimation', {
         templateUrl : 'pages/cssAnimation.html'
     })
 	
-	.when('/javaScript', {
+	.when('/portfolio/javaScript', {
         templateUrl : 'pages/javaScript.html'
     })
 	
-	.when('/java', {
+	.when('/portfolio/java', {
         templateUrl : 'pages/java.html'
     })
     

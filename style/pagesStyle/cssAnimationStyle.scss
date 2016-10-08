@@ -104,10 +104,18 @@ td {
 
 /* truck */
 @-webkit-keyframes driveLeft {
-	100% {-webkit-transform: translate(-300%);}
+	100% {-webkit-transform: translateX(-300%);}
 }
 @keyframes driveLeft {
-	100% {transform: translate(-300%);}
+	100% {transform: translateX(-300%);}
+}
+
+@-webkit-keyframes driveBounce {
+    100% {-webkit-transform: translateY(1px);}
+}
+
+@keyframes driveBounce {
+    100% {transform: translateY(1px);}
 }
 
 .truck {
@@ -119,6 +127,7 @@ td {
 }
 .fa-truck {
 	font-size: 32px;
+    @include animation(driveBounce, .3s, infinite);
 }
 .smoke {
 	position: relative;

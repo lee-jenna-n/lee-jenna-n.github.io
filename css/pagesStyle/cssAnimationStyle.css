@@ -117,10 +117,16 @@ td {
 /* truck */
 @-webkit-keyframes driveLeft {
   100% {
-    -webkit-transform: translate(-300%); } }
+    -webkit-transform: translateX(-300%); } }
 @keyframes driveLeft {
   100% {
-    transform: translate(-300%); } }
+    transform: translateX(-300%); } }
+@-webkit-keyframes driveBounce {
+  100% {
+    -webkit-transform: translateY(1px); } }
+@keyframes driveBounce {
+  100% {
+    transform: translateY(1px); } }
 .truck {
   position: relative;
   left: 100px;
@@ -130,7 +136,9 @@ td {
   animation: driveLeft 6s linear infinite; }
 
 .fa-truck {
-  font-size: 32px; }
+  font-size: 32px;
+  -webkit-animation: driveBounce 0.3s infinite;
+  animation: driveBounce 0.3s infinite; }
 
 .smoke {
   position: relative;

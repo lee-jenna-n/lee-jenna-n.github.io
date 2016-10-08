@@ -8,5 +8,19 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+@-webkit-keyframes toPurple {
+  from {
+    background-color: white;
+    color: #602491; }
+  to {
+    background-color: #602491;
+    color: white; } }
+@keyframes toPurple {
+  from {
+    background-color: white;
+    color: #602491; }
+  to {
+    background-color: #602491;
+    color: white; } }
 
 /*# sourceMappingURL=mainAnimations.css.map */
