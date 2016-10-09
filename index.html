@@ -45,9 +45,9 @@
 				<li><a class="page" ng-class="{active: isActive('/')}" href="#/">Home</a></li>
                 <li id= "portfolio" aria-haspopup="true" ng-mouseover="hideSubmenu = false" ng-mouseleave="hideSubmenu = true"><a class="page" ng-class="{active: isActive('/portfolio')}" href="#/portfolio">Portfolio</a>
 					<ul class="submenu" ng-hide="hideSubmenu">
-						<li><a class="page" href="#/portfolio/cssAnimation">CSS Animation</a></li>
-						<li><a class="page" href="#/portfolio/javaScript">JavaScript</a></li>
-						<li><a class="page" href="#/portfolio/java">Java</a></li>
+						<li><a class="page" href="#/portfolio/cssAnimation" ng-class="{active: isActive('/portfolio/cssAnimation')}">CSS Animation</a></li>
+						<li><a class="page" href="#/portfolio/javaScript" ng-class="{active: isActive('/portfolio/javaScript')}">JavaScript</a></li>
+						<li><a class="page" href="#/portfolio/java" ng-class="{active: isActive('/portfolio/java')}">Java</a></li>
 					</ul>
 				</li>
 				<li><a class="page" ng-class="{active: isActive('/resume')}" href="#/resume">Resume</a></li>

@@ -32,9 +32,13 @@ app.config(function($routeProvider) {
 
 app.controller('myCtrl', ['$scope', '$location', function($scope, $location) {
     $scope.isActive = function(viewLocation) {
-        var active = $location.path().indexOf(viewLocation) > -1;
+        var path = $location.path();
+        var active = path.indexOf(viewLocation) > -1;
         if (viewLocation === '/') {
             active = $location.path() === viewLocation;
+        }
+        if (viewLocation === '/portfolio/java' && path === '/portfolio/javaScript') {
+            active = false;
         }
         return active;
     }
