@@ -17,7 +17,7 @@ b {
 h1 {
     font-family: $heading-font;
     font-size: 30px;
-    margin: 0px 0px 8px;
+    margin: -7px 0px 15px;
 }
 
 h2,
@@ -88,7 +88,7 @@ hr {
 	border-radius: 2px;
     color: $main-purple;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 	width: 170px;
     
     &:link {
@@ -98,7 +98,7 @@ hr {
     
     &:hover {
         @include animation(toPurple, 0.2s);
-        background-color: $main-purple;
+        background-color: $light-purple;
         color: white;
         text-decoration: none;
     }

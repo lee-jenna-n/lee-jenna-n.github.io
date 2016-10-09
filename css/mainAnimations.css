@@ -13,14 +13,14 @@
     background-color: white;
     color: #602491; }
   to {
-    background-color: #602491;
+    background-color: rgba(96, 36, 145, 0.75);
     color: white; } }
 @keyframes toPurple {
   from {
     background-color: white;
     color: #602491; }
   to {
-    background-color: #602491;
+    background-color: rgba(96, 36, 145, 0.75);
     color: white; } }
 
 /*# sourceMappingURL=mainAnimations.css.map */

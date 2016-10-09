@@ -13,14 +13,14 @@
     background-color: white;
     color: #602491; }
   to {
-    background-color: #602491;
+    background-color: rgba(96, 36, 145, 0.75);
     color: white; } }
 @keyframes toPurple {
   from {
     background-color: white;
     color: #602491; }
   to {
-    background-color: #602491;
+    background-color: rgba(96, 36, 145, 0.75);
     color: white; } }
 html, body {
   font-family: "Roboto";
@@ -36,7 +36,7 @@ b {
 h1 {
   font-family: "Roboto Slab";
   font-size: 30px;
-  margin: 0px 0px 8px; }
+  margin: -7px 0px 15px; }
 
 h2,
 h2 a {
@@ -91,7 +91,7 @@ hr {
   border-radius: 2px;
   color: #602491;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   width: 170px; }
   .page:link {
     color: #602491;
@@ -99,7 +99,7 @@ hr {
   .page:hover {
     -webkit-animation: toPurple 0.2s;
     animation: toPurple 0.2s;
-    background-color: #602491;
+    background-color: rgba(96, 36, 145, 0.75);
     color: white;
     text-decoration: none; }
   .page:focus {
