@@ -112,6 +112,16 @@ hr {
     }
 }
 
+.page.active {
+    background-color: $main-purple;
+    color: white;
+    text-decoration: none;
+    
+    &:hover {
+        @include animation(none, 0s);
+    }
+}
+
 .submenu {
 	display: none;
 	position: absolute;

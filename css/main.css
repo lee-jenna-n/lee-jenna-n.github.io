@@ -107,6 +107,14 @@ hr {
     .page:focus:hover {
       color: white; }
 
+.page.active {
+  background-color: #602491;
+  color: white;
+  text-decoration: none; }
+  .page.active:hover {
+    -webkit-animation: none 0s;
+    animation: none 0s; }
+
 .submenu {
   display: none;
   position: absolute;

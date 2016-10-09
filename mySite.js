@@ -3,7 +3,7 @@ var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
     
-	.when('/', {
+	.when('/aboutMe', {
         templateUrl : 'pages/aboutMe.html'
     })
     
@@ -27,6 +27,13 @@ app.config(function($routeProvider) {
         templateUrl : 'pages/java.html'
     })
     
-    .otherwise({reidrectTo: '/'});
+    .otherwise({reidrectTo: '/aboutMe'});
 });
+
+app.controller('myCtrl', ['$scope', '$location', function($scope, $location) {
+    $scope.isActive = function(viewLocation) {
+        var active = $location.path().indexOf(viewLocation) > -1;
+        return active;
+    }
+}]);
 

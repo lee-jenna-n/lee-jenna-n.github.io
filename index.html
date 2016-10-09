@@ -41,16 +41,16 @@
             </div>
             
             <h1><a href="#/" id="title">Jenna Lee</a></h1>
-            <ul id="navigation" role="navigation">
-				<li><a class="page" href="#/">About Me</a></li>
-                <li id= "portfolio" aria-haspopup="true"><a class="page" href="#/portfolio">Portfolio</a>
+            <ul id="navigation" role="navigation" ng-controller="myCtrl">
+				<li><a class="page" ng-class="{active: isActive('/aboutMe')}" href="#/aboutMe">About Me</a></li>
+                <li id= "portfolio" aria-haspopup="true"><a class="page" ng-class="{active: isActive('/portfolio')}" href="#/portfolio">Portfolio</a>
 					<ul class="submenu">
 						<li><a class="page" href="#/portfolio/cssAnimation">CSS Animation</a></li>
 						<li><a class="page" href="#/portfolio/javaScript">JavaScript</a></li>
 						<li><a class="page" href="#/portfolio/java">Java</a></li>
 					</ul>
 				</li>
-				<li><a class="page" href="#/resume">Resume</a></li>
+				<li><a class="page" ng-class="{active: isActive('/resume')}" href="#/resume">Resume</a></li>
             </ul>
             <hr id="underNavLine"/>
         </div>
