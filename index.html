@@ -30,7 +30,7 @@
 		<link rel="stylesheet" type="text/css" href="css/pagesStyle/cssAnimationStyle.css" media="screen" />
     </head>
     <body>
-        <div id="top">
+        <div id="top" role="navigation">
             <div class="contact">
                 <a href="mailto:lee.jenna.n@gmail.com" target="_top" data-toggle="tooltip" data-placement="bottom" title="lee.jenna.n@gmail.com" aria-label="Email icon"><i class="fa fa-envelope"></i></a>
                 <a href="http://www.linkedin.com/in/jenna-lee15" target="_blank" data-toggle="tooltip" data-placement="bottom" title="jenna-lee15" aria-label="LinkedIn icon"><i class="fa fa-linkedin"></i></a>
@@ -41,13 +41,13 @@
             </div>
             
             <h1><a href="#/" id="title">Jenna Lee</a></h1>
-            <ul id="navigation" role="navigation" ng-controller="myCtrl">
-				<li><a class="page" ng-class="{active: isActive('/')}" href="#/">Home</a></li>
-                <li id= "portfolio" aria-haspopup="true" ng-mouseover="hideSubmenu = false" ng-mouseleave="hideSubmenu = true"><a class="page" ng-class="{active: isActive('/portfolio')}" href="#/portfolio">Portfolio</a>
-					<ul class="submenu" ng-hide="hideSubmenu">
-						<li><a class="page" href="#/portfolio/cssAnimation" ng-class="{active: isActive('/portfolio/cssAnimation')}">CSS Animation</a></li>
-						<li><a class="page" href="#/portfolio/javaScript" ng-class="{active: isActive('/portfolio/javaScript')}">JavaScript</a></li>
-						<li><a class="page" href="#/portfolio/java" ng-class="{active: isActive('/portfolio/java')}">Java</a></li>
+            <ul id="navigation" role="menubar" ng-controller="myCtrl">
+				<li role="menuitem"><a class="page" ng-class="{active: isActive('/')}" href="#/">Home</a></li>
+                <li id="portfolio" role="menuitem" aria-haspopup="true" ng-mouseover="hideSubmenu = false" ng-mouseleave="hideSubmenu = true" ng-keydown="portfolioKeydown($event)"><a class="page" ng-focus="hideSubmenu = false" ng-class="{active: isActive('/portfolio')}" href="#/portfolio">Portfolio</a>
+					<ul class="submenu" ng-hide="hideSubmenu" role="menu">
+						<li role="menuitem"><a class="page" href="#/portfolio/cssAnimation" ng-class="{active: isActive('/portfolio/cssAnimation')}">CSS Animation</a></li>
+						<li role="menuitem"><a class="page" href="#/portfolio/javaScript" ng-class="{active: isActive('/portfolio/javaScript')}">JavaScript</a></li>
+						<li role="menuitem"><a class="page" href="#/portfolio/java" ng-class="{active: isActive('/portfolio/java')}">Java</a></li>
 					</ul>
 				</li>
 				<li><a class="page" ng-class="{active: isActive('/resume')}" href="#/resume">Resume</a></li>

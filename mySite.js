@@ -42,5 +42,11 @@ app.controller('myCtrl', ['$scope', '$location', function($scope, $location) {
         }
         return active;
     }
+    
+    $scope.portfolioKeydown = function(event) {
+        if (event.keyCode === 40) {
+            document.querySelector(".submenu .page").focus();
+        }
+    }
 }]);
 
