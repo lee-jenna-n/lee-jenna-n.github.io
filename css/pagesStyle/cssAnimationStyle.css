@@ -1,3 +1,6 @@
+@font-face {
+  font-family: King-Basil;
+  src: url(../../resources/King-Basil-Lite.otf) format("opentype"); }
 table {
   width: 70%; }
 

@@ -15,20 +15,25 @@ b {
 }
 
 h1 {
-    font-family: $heading-font;
-    font-size: 30px;
-    margin: -7px 0px 15px;
+    margin: 2px 0px 0px;
 }
 
-h2,
-h2 a {
+h2 {
+    font-family: $heading-font;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h3,
+h3 a {
     color: $main-purple;
     font-size: 22px;
     font-weight: 500;
 }
 
 a {
-    font-size: 16px;
+    font-size: 15px;
     color: $main-purple;
     text-decoration: underline;
     
@@ -50,8 +55,7 @@ a {
 
 #title {
     font-family: $title-font;
-    font-size: 55px;
-    margin: 0px 0px 8px;
+    font-size: 60px;
     text-decoration: none;
     &:hover,
     &:focus,
@@ -62,7 +66,7 @@ a {
 }
 
 hr {
-    height: 1px;
+    height: 2px;
     background: $main-purple;
     margin-top: 0px;
     margin-bottom: 0px;

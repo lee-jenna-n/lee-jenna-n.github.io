@@ -1,3 +1,9 @@
+@font-face {
+  font-family: King-Basil;
+  src: url(../../resources/King-Basil-Lite.otf) format("opentype"); }
+@font-face {
+  font-family: King-Basil;
+  src: url(../../resources/King-Basil-Lite.otf) format("opentype"); }
 @-webkit-keyframes fadeInSubmenu {
   from {
     opacity: 0; }
@@ -34,18 +40,22 @@ b {
   font-weight: 700; }
 
 h1 {
+  margin: 2px 0px 0px; }
+
+h2 {
   font-family: "Roboto Slab";
   font-size: 30px;
-  margin: -7px 0px 15px; }
+  margin-top: 0px;
+  margin-bottom: 10px; }
 
-h2,
-h2 a {
+h3,
+h3 a {
   color: #602491;
   font-size: 22px;
   font-weight: 500; }
 
 a {
-  font-size: 16px;
+  font-size: 15px;
   color: #602491;
   text-decoration: underline; }
   a:hover {
@@ -60,16 +70,15 @@ a {
   height: 150px; }
 
 #title {
-  font-family: "Pacifico";
-  font-size: 55px;
-  margin: 0px 0px 8px;
+  font-family: "King-Basil";
+  font-size: 60px;
   text-decoration: none; }
   #title:hover, #title:focus, #title:visited {
     color: #602491;
     text-decoration: none; }
 
 hr {
-  height: 1px;
+  height: 2px;
   background: #602491;
   margin-top: 0px;
   margin-bottom: 0px; }
