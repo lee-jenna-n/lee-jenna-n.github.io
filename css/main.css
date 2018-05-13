@@ -45,7 +45,7 @@ b {
   font-weight: 700; }
 
 h1 {
-  margin: 2px 0px 0px; }
+  margin-top: 85px; }
 
 h2 {
   font-family: "Roboto Slab";
@@ -72,11 +72,12 @@ a {
   font-family: "Roboto Slab";
   color: #602491;
   text-align: center;
-  height: 150px; }
+  padding-bottom: 50px;
+}
 
 #title {
   font-family: "King-Basil";
-  font-size: 60px;
+  font-size: 140px;
   text-decoration: none; }
   #title:hover, #title:focus, #title:visited {
     color: #602491;
