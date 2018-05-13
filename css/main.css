@@ -172,12 +172,14 @@ hr {
     margin: 0 5px 0 -15px; }
 
 .contact {
-  text-align: right;
+  text-align: center;
   padding-top: 8px;
   padding-right: 15px; }
   .contact a {
     margin-right: 8px; }
   .contact .fa {
+    font-size: 120px;
+    padding: 20px;
     color: #602491; }
   .contact .fa-envelope,
   .contact .fa-facebook-official {
