@@ -33,6 +33,12 @@
   padding: 0 120px;
 }
 
+#footer-section {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+
 html, body {
   font-family: "Roboto";
   min-width: 800px;
