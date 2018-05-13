@@ -28,6 +28,11 @@
   to {
     background-color: rgba(96, 36, 145, 0.75);
     color: white; } }
+
+.construction-message {
+  padding: 0 120px;
+}
+
 html, body {
   font-family: "Roboto";
   min-width: 800px;
