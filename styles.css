@@ -3,67 +3,58 @@ html,
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0px;
-    font-weight: 400;
     font-size: 1.1rem;
     height: 100%;
     min-height: 100%;
     color: #666;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     color: #6a1eaf;
 }
 
-h1,
-#site-title {
+h1 {
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     color: #6a1eaf;
-    font-size: 2rem;
-    font-weight: 800;
 }
 
-#page {
+#heading {
     display: flex;
-    height: 100%;
+    align-items: baseline;
 }
 
-#sidebar-section {
-    padding: 3rem;
+#footer {
+    padding: 1rem;
     flex-shrink: 0;
     color: #6a1eaf;
-    border: 2px solid #6a1eaf;
-    display: flex;
-    flex-direction: column;
-    max-width: 700px;
+    border: 1px solid #6a1eaf;
     margin: 0.5rem;
     background: #6a1eaf0f;
+    text-align: center;
 }
 
-#sidebar-text {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin-bottom: 2rem;
+#contact a {
+    font-size: 1rem;
+    margin: 0.5rem;
 }
 
-#contact-section a {
-    display: block;
-    line-height: 1.5rem;
-}
-
-.content-section {
-    padding: 5rem 10rem;
+#content {
+    padding: 5rem 15rem;
     line-height: 1.75rem;
+    flex-grow: 1;
 }
 
 #photo-container {
     background-color: white;
     border-radius: 50%;
-    border: 5px solid white;
     overflow: hidden;
-    margin: 0.5rem;
+    margin: 1rem;
     padding: 0;
 }
 
