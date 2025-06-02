@@ -31,6 +31,7 @@ h2 {
 
 #janna {
   width: 400px;
+  max-width: 100%;
 }
 
 #content {
@@ -101,7 +102,7 @@ h2 {
   }
 
   #content {
-    padding: 5rem 8rem;
+    padding: 3rem 8rem;
     overflow: inherit;
   }
 }
@@ -111,6 +112,6 @@ h2 {
     display: none;
   }
   #content {
-    padding: 3rem;
+    padding: 2rem;
   }
 }
