@@ -114,4 +114,15 @@ h2 {
   #content {
     padding: 2rem;
   }
+
+  .zine .title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+  }
+
+  .zine .title .date {
+    font-size: 1rem;
+    margin-right: 0.25rem;
+  }
 }
