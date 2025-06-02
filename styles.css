@@ -95,8 +95,9 @@ h2 {
 @media screen and (max-width: 992px) {
   #left-cat {
     width: 150px;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
+    top: unset;
   }
 
   #content {
