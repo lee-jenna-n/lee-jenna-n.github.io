@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jenna Lee</title>
+  <head>
+    <title>Jenna Lee</title>
 
-        <meta charset="utf-8" />
-        <meta name="description" content="Jenna Lee" />
-        <meta name="author" content="Jenna" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Janna Ink" />
+    <meta name="author" content="Janna" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Comfortaa|Nunito:400,700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./styles.css"
-            media="screen"
-        />
-    </head>
-    <body>
-        <div id="content">
-            <div id="heading">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
+  </head>
+  <body>
+    <img src="assets/cat.png" alt="" id="left-cat" />
+    <div id="content">
+      <h1 class="sr-only">Hi, I'm Janna</h1>
+      <img src="assets/janna.png" alt="" id="janna" />
+      <p>I make zines.</p>
+
+      <div id="zines">
+        <div class="zine">
+          <div class="title">
+            <h2>Burnout</h2>
+            <div>
+              <div class="date">May 2025</div>
+              <a
+                href="assets/zines/burnout/printable.pdf"
+                target="_blank"
+                download
+              >
                 <img
-                    id="photo"
-                    src="JennaPhoto.jpg"
-                    alt="Jenna smiling at grapes"
+                  class="download-icon"
+                  src="assets/download.png"
+                  alt="download"
                 />
-                <h1>Hi, my name is Jenna Lee.</h1>
+              </a>
             </div>
-            <p>
-                I'm a software engineer and team lead at
-                <a href="https://patreon.com">Patreon</a>, based in San
-                Francisco. Since 2016, I've planned, built, and maintained
-                product features, experiments, and prototypes in highly
-                collaborative environments. I've also run scrum, served as a web
-                accessibility expert, and formalized values for a 50-person
-                department. I'm a big fan of team development, strengths
-                psychology (my
-                <a
-                    href="https://www.gallup.com/cliftonstrengths/en/253715/34-cliftonstrengths-themes.aspx"
-                    target="_blank"
-                    >top 5</a
-                >
-                are Learner, Individualization, Achiever, Focus, and
-                Discipline), and organizational structure and processes that
-                support people.
-            </p>
+          </div>
+          <img src="assets/zines/burnout/burnout.png" alt="feedback zine" />
         </div>
-        <div id="footer">
-            <div id="contact">
-                <a href="mailto:lee.jenna.n@gmail.com">lee.jenna.n@gmail.com</a>
-                <a href="JennaLeeResume.pdf" target="_blank">Resume</a>
-                <a href="http://www.linkedin.com/in/jenna-lee15" target="_blank"
-                    >LinkedIn</a
-                >
+        <div class="zine">
+          <div class="title">
+            <h2>Feedback</h2>
+            <div>
+              <div class="date">March 2025</div>
+              <a
+                href="assets/zines/feedback/printable.pdf"
+                target="_blank"
+                download
+              >
+                <img
+                  class="download-icon"
+                  src="assets/download.png"
+                  alt="download"
+                />
+              </a>
             </div>
+          </div>
+          <img src="assets/zines/feedback/feedback.png" alt="feedback zine" />
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
